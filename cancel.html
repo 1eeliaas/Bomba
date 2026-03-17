@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paiement annulé — Bomba Cakes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --pink: #F06292; --cream: #FFF8F2; --ink: #1C0A12; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); margin: 0; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-up { animation: fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) both; }
+  </style>
+</head>
+<body>
+  <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+    background: radial-gradient(ellipse 60% 50% at 50% 30%, rgba(240,98,146,0.1) 0%, transparent 70%), var(--cream);">
+    <div class="animate-fade-up" style="text-align:center;max-width:480px;">
+      <div style="font-size:72px;margin-bottom:24px;">😕</div>
+      <h1 style="font-family:'Paytone One',sans-serif;font-size:clamp(28px,5vw,48px);letter-spacing:-0.03em;color:var(--ink);margin-bottom:16px;">
+        Paiement annulé
+      </h1>
+      <p style="font-size:17px;line-height:1.7;color:#4A2236;font-weight:300;margin-bottom:32px;">
+        Votre commande n'a pas été finalisée.<br/>
+        Votre panier est toujours disponible, revenez quand vous voulez !
+      </p>
+      <a href="/"
+        style="display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;
+          font-size:16px;font-weight:600;padding:14px 32px;border-radius:100px;text-decoration:none;
+          box-shadow:0 4px 20px rgba(240,98,146,0.4);transition:background 0.2s ease;"
+        onmouseover="this.style.background='#C2185B'" onmouseout="this.style.background='var(--pink)'">
+        ← Retour à la boutique
+      </a>
+    </div>
+  </div>
+</body>
+</html>
